@@ -1,5 +1,5 @@
 import torch
-
+import wandb 
 
 ## install unsloth from https://github.com/unslothai/unsloth
 
@@ -17,6 +17,14 @@ print(major_version,minor_version)
 #pass
 
 
+
+
+
+wandb.init(
+      # Set the project where this run will be logged
+      project="llama3-unsloth", 
+      # We pass a run name (otherwise it’ll be randomly assigned, like sunshine-lollypop-10)
+)
 
 
 from unsloth import FastLanguageModel
